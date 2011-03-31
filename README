@@ -1,0 +1,17 @@
+Android Application
+Author: Kensen John
+Date: Mar 30, 2011
+
+This application is used to download images from website.
+The "props" folder contains "spiderpic.properties" where we can set the url from which to download the pictures.
+
+download_location=/home/kensen/Downloads/images
+site_name=http://www.iiiii.com/random.php
+download_algo=jjjjjj  #this specifies the different algorithms to use to download pics.
+
+The application executes the URL. It will parse the html that is returned.
+It will identify the path of the image and then download the image.
+
+To prevent any kind of Denial of Service, the code will hit the website once in 3 seconds.
+
+DownloadThread.java holds the code/logic to download images.
